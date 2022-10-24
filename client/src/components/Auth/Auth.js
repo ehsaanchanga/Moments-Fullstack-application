@@ -31,8 +31,7 @@ const SignUp = () => {
   useEffect(() => {
     function start() {
       gapi.client.init({
-        clientId:
-          '193039110025-o0ia46qcff08kicpnep0t4a57ahlfb2r.apps.googleusercontent.com',
+        clientId: process.env.REACT_APP_MOMENTS_APP_GOOGLE_OAUTH_CLIENT_ID,
         scope: 'email',
       });
     }
